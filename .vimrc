@@ -8,14 +8,22 @@ call plug#begin()
   Plug 'tpope/vim-rake'
 call plug#end()
 
-nmap <C-c> <esc>
+" Salva com Ctrl + s
 nmap <C-s> :w <CR>
+
+" Volta ao NormalMode com Ctrl + c
+nmap <C-c> <esc>
 imap <C-c> <esc>
 vmap <C-c> <esc>
 
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+" Foca no NERDTree
+nnoremap <C-n> :NERDTree<CR> 
 
-" Number row
+" Toggle o NERDTree
+nnoremap <C-t> :NERDTreeToggle<CR>
+" Habilita ver arquivos escondidos
+let NERDTreeShowHidden=1
+
+" Numero relativo das linhas
 set relativenumber
 set number
