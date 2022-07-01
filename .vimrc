@@ -5,9 +5,9 @@ set encoding=UTF-8
 nmap <C-s> :w <CR>
 
 " Volta ao NormalMode com Ctrl + c
-nmap <C-c> <esc>
 imap <C-c> <esc>
 vmap <C-c> <esc>
+imap kj <esc>
 
 " Foca no NERDTree
 nnoremap <C-n> :NERDTree<CR> 
@@ -21,6 +21,9 @@ let NERDTreeShowHidden=1
 " Numero relativo das linhas
 set relativenumber
 set number
+
+" Define o tamanho maximo de linha
+set textwidth=79
 
 autocmd Filetype javascript setlocal tabstop=4
 autocmd Filetype css setlocal tabstop=4
